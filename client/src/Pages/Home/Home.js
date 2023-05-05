@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import { AiOutlineSetting } from "react-icons/ai";
+import Login from "./RightS/Login/Login";
 
 const Home = () => {
   return (
@@ -15,7 +16,7 @@ const Home = () => {
         </div>
       </div>
       <div className="right-h">
-
+        <Login/>
       </div>
     </div>
   );

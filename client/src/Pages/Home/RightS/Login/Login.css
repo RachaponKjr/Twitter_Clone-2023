@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+:root{
+    --g-hover: rgba(231,233,234,0.1);
+}
+.box-m{
+    width: 22rem;
+    height: max-content;
+    border-radius: 10px;
+    border:1px solid var(--g-hover) ;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+.f-24{
+    font-size: 22px;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+}
+.f-16{
+    font-size: 14px;
+    color: #71767b;
+    font-family: 'Rubik';
+    font-weight: 300;
+}
+.m-1{
+    margin-bottom: 0.5rem;
+}
+.list-regis{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    gap: 0.8rem;
+    align-items: start;
+}
+.item-regis{
+    display: flex;
+    background-color: white;
+    width: 90%;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.icon-reg{
+    width: 2rem;
+    height: 100%;
+    padding: 0.3rem;
+}
+.text-reg{
+    color: rgb(35, 35, 35);
+    font-size: 16px;
+    font-family: 'Rubik';
+    font-weight: 500;
+
+}
+.bb-re{
+    display:flex;
+    padding: 0 1rem 0 0;
+    gap: 0.3rem;
+    justify-content:center;
+    align-items:center;
+    width: 70%;
+    height: 100%;
+}
+.pv-p{
+    color: #71767b;
+    font-family: 'Rubik';
+}
