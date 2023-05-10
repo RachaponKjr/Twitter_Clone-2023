@@ -64,3 +64,10 @@
     font-size: 20px;
     font-weight: 00;
 }
+.linksticon{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

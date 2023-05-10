@@ -28,7 +28,7 @@
     flex-direction: column;
     margin: 1rem 0;
     gap: 0.8rem;
-    align-items: start;
+    align-items: flex-start;
 }
 .item-regis{
     display: flex;
@@ -64,4 +64,8 @@
 .pv-p{
     color: #71767b;
     font-family: 'Rubik';
+}
+.linkst{
+    text-decoration: none;
+    color: rgb(35, 35, 35);
 }

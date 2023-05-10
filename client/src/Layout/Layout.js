@@ -3,7 +3,7 @@ import { BsTwitter } from "react-icons/bs";
 import { HiHashtag } from "react-icons/hi";
 import { AiOutlineSetting } from "react-icons/ai";
 import "./Layout.css";
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 const Layout = () => {
   return (
@@ -22,7 +22,7 @@ const Layout = () => {
           >
             <div className="box-hh cur-p">
               <div className="box-h">
-                <BsTwitter />
+                <Link to="/" className="linksticon" ><BsTwitter /></Link>
               </div>
             </div>
             <div className="box-i cur-p">

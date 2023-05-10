@@ -2,6 +2,7 @@ import React from "react";
 import "./Login.css";
 import { FcGoogle } from "react-icons/fc";
 import { AiFillApple } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
@@ -26,7 +27,7 @@ const Login = () => {
         <div className="item-regis">
           <div className="bb-re" style={{padding:"0 1rem"}}>
             {/* <div className="icon-reg"></div> */}
-            <h5 className="text-reg" >Create account</h5>
+            <h5 className="text-reg" ><Link to="/signup" className="linkst">Create account</Link></h5>
           </div>
         </div>
       </div>

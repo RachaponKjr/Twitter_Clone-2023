@@ -2,6 +2,7 @@ import React from "react";
 import "./Home.css";
 import { AiOutlineSetting } from "react-icons/ai";
 import Login from "./RightS/Login/Login";
+import { Outlet } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <div className="right-h">
         <Login/>
       </div>
+      <Outlet/>
     </div>
   );
 };
