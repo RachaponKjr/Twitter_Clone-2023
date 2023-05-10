@@ -25,10 +25,12 @@ const Login = () => {
           </div>
         </div>
         <div className="item-regis">
+        <Link to="/signup" className="linkst">
           <div className="bb-re" style={{padding:"0 1rem"}}>
             {/* <div className="icon-reg"></div> */}
-            <h5 className="text-reg" ><Link to="/signup" className="linkst">Create account</Link></h5>
+            <h5 className="text-reg" >Create account</h5>
           </div>
+          </Link>
         </div>
       </div>
       <h6 className="pv-p">

@@ -1,7 +1,41 @@
-.test{
+.by-si{
     position: absolute;
     top: 50%;
     left: 50%;
+    height: 40rem;
+    width: 38rem;
+    border-radius: 20px;
     transform: translate(-50%, -50%);
     background-color: aqua;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.h-si{
+    background-color: red;
+    width: 100%;
+    height: 56px;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.icon-x{
+    background-color: antiquewhite;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    padding: 0.5rem;
+}
+
+.bot-su{
+    background-color: antiquewhite;
+    width: 100%;
+    height: 4rem;
+}
+.form-su{
+    background-color: blue;
+    width: 100%;
+    height: 100%;
 }
