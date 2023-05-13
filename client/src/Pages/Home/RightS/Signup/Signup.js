@@ -82,18 +82,19 @@ const Signup = () => {
     <div className="by-si">
       <div className="h-si">
         <GrClose className="icon-x" />
-        <h2>Step 1 of 5</h2>
+        <h2 className="f-h2">Step 1 of 5</h2>
       </div>
       <div className="form-su">
         <form
-          style={{ width: "100%", height: "100%", display:'flex',flexDirection:"column" }}
+          style={{ width: "100%", height: "100%", display:'flex',flexDirection:"column",justifyContent:'space-between' }}
         >
+          <div style={{display:'flex',flexDirection:'column'}}>
           <h1 className="h1-head">Create your account</h1>
           <input type="text" placeholder="Name" className="input-sty"></input>
           <input type="text" placeholder="Phone" className="input-sty"></input>
-          <h4 style={{display:"flex",justifyContent:'end',color:'blue',cursor:'pointer'}} className="h-u-m">Use email instead</h4>
+          <h4 style={{display:"flex",justifyContent:'end',color:'#1D9BF0',cursor:'pointer'}} className="h-u-m">Use email instead</h4>
           <div className="date-o-b">
-            <h3 style={{color:'white',fontSize:'18px',margin:"0.5rem 0"}}>Date o birth</h3>
+            <h3 style={{color:'white',fontSize:'16px',margin:"0.5rem 0",fontFamily:'Rubik,sans-serif'}}>Date o birth</h3>
             <p className="p-sty">
               This will not be shown publicly. Confirm your own age, even if
               this account is for a business, a pet, or something else.
@@ -128,6 +129,8 @@ const Signup = () => {
               </select>
             </div>
           </div>
+          </div>
+          <button type="submit" className="btn-s">Next</button>
         </form>
       </div>
     </div>
