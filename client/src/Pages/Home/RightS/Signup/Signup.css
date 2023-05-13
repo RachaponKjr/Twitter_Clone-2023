@@ -1,3 +1,13 @@
+:root{
+    --g-hover: rgba(231,233,234,0.1);
+}
+.test{
+    position:fixed;
+    background-color: #5B708366;
+    width: 100vw;
+    left: 0;
+    height: 100vh;
+}
 .by-si{
     position: absolute;
     top: 50%;
@@ -35,8 +45,77 @@
     height: 4rem;
 }
 .form-su{
-    background-color: blue;
+    background-color: rgb(0, 0, 0);
     width: 100%;
     height: 100%;
     padding: 2rem 5rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* section 1 */
+.h1-head{
+    color: white;
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.input-sty{
+    height: 3.5rem;
+    margin: 1rem 0 0.5rem 0;
+    padding: 0 0.5rem;
+    outline: none;
+    border: 1px solid red;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+.h-u-m:hover{
+    text-decoration:underline;
+}
+.date-o-b{
+    margin: 2rem 0;
+}
+.p-sty{
+    color: aqua;
+    margin: 0.5rem 0;
+}
+.date-sty{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 3rem;
+    margin: 1rem 0;
+}
+.opt-1{
+    width: 13rem;
+    
+}
+.opt-2{
+    width: 6rem;
+}
+.opt-3{
+    width: 7rem;
+}
+.sty-date{
+    padding: 0 0.5rem;
+    outline: none;
+    border: 1px solid red;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: transparent;
 }

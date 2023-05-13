@@ -1,6 +1,14 @@
 import React, { useEffect, useState } from "react";
 import "./Signup.css";
 import { GrClose } from "react-icons/gr";
+import {
+  data,
+  dayNumber1,
+  dayNumber2,
+  dayNumber3,
+} from "../../../../Data/Data";
+
+import { loopYear } from "../../../../FU/Year_fu";
 
 const Signup = () => {
   // const [formStep, setFormStep] = useState(0)
@@ -12,387 +20,10 @@ const Signup = () => {
     },
   ]);
   const [day, setDay] = useState([]);
-  const editday = day
 
-  console.log(editday)
-  const data = [
-    {
-      label: "January",
-      value: "January",
-    },
-    {
-      label: "February",
-      value: "February",
-    },
-    {
-      label: "March",
-      value: "March",
-    },
-    {
-      label: "April",
-      value: "April",
-    },
-    {
-      label: "May",
-      value: "May",
-    },
-    {
-      label: "June",
-      value: "June",
-    },
-    {
-      label: "July",
-      value: "July",
-    },
-    {
-      label: "August",
-      value: "August",
-    },
-    {
-      label: "September",
-      value: "September",
-    },
-    {
-      label: "October",
-      value: "October",
-    },
-    {
-      label: "November",
-      value: "November",
-    },
-    {
-      label: "December",
-      value: "December",
-    },
-  ];
-  const dayNumber1 = [
-    {
-      nuberday: "1",
-      valueday: "1",
-    },
-    {
-      nuberday: "2",
-      valueday: "3",
-    },
-    {
-      nuberday: "4",
-      valueday: "5",
-    },
-    {
-      nuberday: "6",
-      valueday: "6",
-    },
-    {
-      nuberday: "7",
-      valueday: "7",
-    },
-    {
-      nuberday: "8",
-      valueday: "8",
-    },
-    {
-      nuberday: "9",
-      valueday: "9",
-    },
-    {
-      nuberday: "10",
-      valueday: "10",
-    },
-    {
-      nuberday: "11",
-      valueday: "12",
-    },
-    {
-      nuberday: "13",
-      valueday: "13",
-    },{
-      nuberday: "14",
-      valueday: "14",
-    },
-    {
-      nuberday: "15",
-      valueday: "15",
-    },
-    {
-      nuberday: "16",
-      valueday: "16",
-    },
-    {
-      nuberday: "17",
-      valueday: "17",
-    },
-    {
-      nuberday: "18",
-      valueday: "18",
-    },
-    {
-      nuberday: "19",
-      valueday: "19",
-    },
-    {
-      nuberday: "20",
-      valueday: "20",
-    },
-    {
-      nuberday: "21",
-      valueday: "21",
-    },
-    {
-      nuberday: "22",
-      valueday: "22",
-    },
-    {
-      nuberday: "23",
-      valueday: "23",
-    },
-    {
-      nuberday: "24",
-      valueday: "24",
-    },
-    {
-      nuberday: "25",
-      valueday: "25",
-    },
-    {
-      nuberday: "26",
-      valueday: "26",
-    },
-    {
-      nuberday: "27",
-      valueday: "27",
-    },
-    {
-      nuberday: "28",
-      valueday: "28",
-    },
-    {
-      nuberday: "29",
-      valueday: "29",
-    },
-    {
-      nuberday: "30",
-      valueday: "30",
-    }
-  ];
-  const dayNumber2 = [
-    {
-      nuberday: "1",
-      valueday: "1",
-    },
-    {
-      nuberday: "2",
-      valueday: "3",
-    },
-    {
-      nuberday: "4",
-      valueday: "5",
-    },
-    {
-      nuberday: "6",
-      valueday: "6",
-    },
-    {
-      nuberday: "7",
-      valueday: "7",
-    },
-    {
-      nuberday: "8",
-      valueday: "8",
-    },
-    {
-      nuberday: "9",
-      valueday: "9",
-    },
-    {
-      nuberday: "10",
-      valueday: "10",
-    },
-    {
-      nuberday: "11",
-      valueday: "12",
-    },
-    {
-      nuberday: "13",
-      valueday: "13",
-    },{
-      nuberday: "14",
-      valueday: "14",
-    },
-    {
-      nuberday: "15",
-      valueday: "15",
-    },
-    {
-      nuberday: "16",
-      valueday: "16",
-    },
-    {
-      nuberday: "17",
-      valueday: "17",
-    },
-    {
-      nuberday: "18",
-      valueday: "18",
-    },
-    {
-      nuberday: "19",
-      valueday: "19",
-    },
-    {
-      nuberday: "20",
-      valueday: "20",
-    },
-    {
-      nuberday: "21",
-      valueday: "21",
-    },
-    {
-      nuberday: "22",
-      valueday: "22",
-    },
-    {
-      nuberday: "23",
-      valueday: "23",
-    },
-    {
-      nuberday: "24",
-      valueday: "24",
-    },
-    {
-      nuberday: "25",
-      valueday: "25",
-    },
-    {
-      nuberday: "26",
-      valueday: "26",
-    },
-    {
-      nuberday: "27",
-      valueday: "27",
-    },
-    {
-      nuberday: "28",
-      valueday: "28",
-    },
-    {
-      nuberday: "29",
-      valueday: "29",
-    },
-    {
-      nuberday: "30",
-      valueday: "30",
-    },
-    {
-      nuberday: "31",
-      valueday: "31",
-    }
-  ];
-  const dayNumber3 = [
-    {
-      nuberday: "1",
-      valueday: "1",
-    },
-    {
-      nuberday: "2",
-      valueday: "3",
-    },
-    {
-      nuberday: "4",
-      valueday: "5",
-    },
-    {
-      nuberday: "6",
-      valueday: "6",
-    },
-    {
-      nuberday: "7",
-      valueday: "7",
-    },
-    {
-      nuberday: "8",
-      valueday: "8",
-    },
-    {
-      nuberday: "9",
-      valueday: "9",
-    },
-    {
-      nuberday: "10",
-      valueday: "10",
-    },
-    {
-      nuberday: "11",
-      valueday: "12",
-    },
-    {
-      nuberday: "13",
-      valueday: "13",
-    },{
-      nuberday: "14",
-      valueday: "14",
-    },
-    {
-      nuberday: "15",
-      valueday: "15",
-    },
-    {
-      nuberday: "16",
-      valueday: "16",
-    },
-    {
-      nuberday: "17",
-      valueday: "17",
-    },
-    {
-      nuberday: "18",
-      valueday: "18",
-    },
-    {
-      nuberday: "19",
-      valueday: "19",
-    },
-    {
-      nuberday: "20",
-      valueday: "20",
-    },
-    {
-      nuberday: "21",
-      valueday: "21",
-    },
-    {
-      nuberday: "22",
-      valueday: "22",
-    },
-    {
-      nuberday: "23",
-      valueday: "23",
-    },
-    {
-      nuberday: "24",
-      valueday: "24",
-    },
-    {
-      nuberday: "25",
-      valueday: "25",
-    },
-    {
-      nuberday: "26",
-      valueday: "26",
-    },
-    {
-      nuberday: "27",
-      valueday: "27",
-    },
-    {
-      nuberday: "28",
-      valueday: "28",
-    },
-    {
-      nuberday: "29",
-      valueday: "29",
-    }
-  ];
-
+  const editday = day;
+  const dataY = loopYear()
+  console.log(dataY);
   /* eslint-disable */
   useEffect(() => {
     chackMonth();
@@ -447,6 +78,7 @@ const Signup = () => {
   };
 
   return (
+    <div className="test">
     <div className="by-si">
       <div className="h-si">
         <GrClose className="icon-x" />
@@ -454,20 +86,20 @@ const Signup = () => {
       </div>
       <div className="form-su">
         <form
-          style={{ backgroundColor: "pink", width: "100%", height: "100%" }}
+          style={{ width: "100%", height: "100%", display:'flex',flexDirection:"column" }}
         >
-          <h1>Create your account</h1>
-          <input type="text" placeholder="Name"></input>
-          <input type="text" placeholder="Phone"></input>
-          <h4>Use email instead</h4>
-          <div>
-            <h3>Date o birth</h3>
-            <p>
+          <h1 className="h1-head">Create your account</h1>
+          <input type="text" placeholder="Name" className="input-sty"></input>
+          <input type="text" placeholder="Phone" className="input-sty"></input>
+          <h4 style={{display:"flex",justifyContent:'end',color:'blue',cursor:'pointer'}} className="h-u-m">Use email instead</h4>
+          <div className="date-o-b">
+            <h3 style={{color:'white',fontSize:'18px',margin:"0.5rem 0"}}>Date o birth</h3>
+            <p className="p-sty">
               This will not be shown publicly. Confirm your own age, even if
               this account is for a business, a pet, or something else.
             </p>
-            <div>
-              <select onChange={handleChange}>
+            <div className="date-sty">
+              <select onChange={handleChange} className="opt-1 sty-date">
                 {data.map((data, index) => {
                   return (
                     <option key={index} value={data.value}>
@@ -476,15 +108,29 @@ const Signup = () => {
                   );
                 })}
               </select>
-              <select>
-                {editday.map((editday,index)=>{
-                  return <option key={index} value={editday.valueday}>{editday.nuberday}</option>
+              <select className="opt-2 sty-date">
+                {editday.map((editday, index) => {
+                  return (
+                    <option key={index} value={editday.valueday}>
+                      {editday.nuberday}
+                    </option>
+                  );
+                })}
+              </select>
+              <select className="opt-3 sty-date">
+                {dataY.map((dataY, index) => {
+                  return (
+                    <option key={index} value={dataY.valueYear}>
+                      {dataY.numberYear}
+                    </option>
+                  );
                 })}
               </select>
             </div>
           </div>
         </form>
       </div>
+    </div>
     </div>
   );
 };
