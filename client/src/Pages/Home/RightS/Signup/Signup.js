@@ -88,7 +88,7 @@ const Signup = () => {
         <form
           style={{ width: "100%", height: "100%", display:'flex',flexDirection:"column",justifyContent:'space-between' }}
         >
-          <div style={{display:'flex',flexDirection:'column'}}>
+          {/* <div style={{display:'flex',flexDirection:'column'}}>
           <h1 className="h1-head">Create your account</h1>
           <input type="text" placeholder="Name" className="input-sty"></input>
           <input type="text" placeholder="Phone" className="input-sty"></input>
@@ -129,6 +129,13 @@ const Signup = () => {
               </select>
             </div>
           </div>
+          </div> */}
+
+          <div className="head-2">
+            <div>
+              
+            </div>
+            
           </div>
           <button type="submit" className="btn-s">Next</button>
         </form>
