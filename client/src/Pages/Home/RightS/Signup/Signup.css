@@ -135,3 +135,58 @@
     color: gray;
     font-family: 'Rubik', sans-serif;
 }
+
+
+
+
+
+
+
+/* section 2 */
+.c-w{
+    color: white;
+}
+.f-30{
+    font-size: 30px;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 1px;
+}
+.f-24{
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 1px;
+    
+}
+.f-18{
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    font-weight:1;
+    letter-spacing: 0.5px;
+
+    
+}
+.mg-02{
+    margin: 0.5rem 0;
+}
+.mg-2{
+    margin: 0 0 2rem 0;
+}
+.in-st{
+    width: 3rem;
+    display: flex;
+    top: -20px;
+    position: relative;
+    align-items: start;
+}
+.mg-t-2{
+    margin-top: 2rem;
+    color: gray;
+    
+}
+.sp-tx{
+    color: #1D9BF0;
+    cursor: pointer;
+}
+.sp-tx:hover{
+    text-decoration: underline;
+}
