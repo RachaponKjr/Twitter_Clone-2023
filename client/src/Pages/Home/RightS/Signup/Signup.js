@@ -7,6 +7,8 @@ import {
   dayNumber2,
   dayNumber3,
 } from "../../../../Data/Data";
+import { Link } from "react-router-dom";
+
 
 import { loopYear } from "../../../../FU/Year_fu";
 
@@ -73,19 +75,26 @@ const Signup = () => {
         break;
     }
   }
-  const comFromStep= () =>{
-    setFormStep(cur => cur + 1)
-  }
+  const comFromStep = () => {
+    setFormStep((cur) => cur + 1);
+  };
   const btnSub = () => {
-    if (formStep > 2){
-      return undefined
+    if (formStep > 3) {
+      return undefined;
+    } else if (formStep === 3) {
+      return (
+        <button type="button" onClick={comFromStep} className="btn-s btn-3">
+          Sing Up
+        </button>
+      );
     }else{
-      return(
-      <button type="button" onClick={comFromStep} className="btn-s">
-      Next
-    </button>)
+      return (
+        <button type="button" onClick={comFromStep} className="btn-s">
+          Next
+        </button>
+      );
     }
-  } 
+  };
   const handleChange = (e) => {
     setDataB({ month: e.target.value });
   };
@@ -94,7 +103,7 @@ const Signup = () => {
     <div className="test">
       <div className="by-si">
         <div className="h-si">
-          <GrClose className="icon-x" />
+          <Link to={'/'}><GrClose className="icon-x" /> </Link>
           <h2 className="f-h2">Step {formStep} of 5</h2>
         </div>
         <div className="form-su">
@@ -179,21 +188,76 @@ const Signup = () => {
               </div>
             )}
 
-            {formStep === 2 && (<div className="head-2">
-              <div>
-                <h3 className="c-w f-30 mg-2">Customize your experience</h3>
-                <h4 className="c-w f-24 mg-02">Track where you see Twitter content across the web</h4>
-                <div style={{display:'flex',flexDirection:'row',gap:'0.5rem'}}>
-                  <h5 className="c-w f-18 mg-02">Twitter uses this data to personalize your experience. This web browsing history will never be stored with your name, email, or phone number.</h5>
-                  <input type="checkbox" className="in-st"></input>
+            {formStep === 2 && (
+              <div className="head-2">
+                <div>
+                  <h3 className="c-w f-30 mg-2">Customize your experience</h3>
+                  <h4 className="c-w f-24 mg-02">
+                    Track where you see Twitter content across the web
+                  </h4>
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      gap: "0.5rem",
+                    }}
+                  >
+                    <h5 className="c-w f-18 mg-02">
+                      Twitter uses this data to personalize your experience.
+                      This web browsing history will never be stored with your
+                      name, email, or phone number.
+                    </h5>
+                    <input type="checkbox" className="in-st"></input>
+                  </div>
+                </div>
+                <h5 className="mg-t-2 f-18">
+                  By signing up, you agree to our{" "}
+                  <span className="sp-tx">Terms</span>,{" "}
+                  <span className="sp-tx">Privacy Policy</span>, and{" "}
+                  <span className="sp-tx">Cookie Use</span>. Twitter may use
+                  your contact information, including your email address and
+                  phone number for purposes outlined in our Privacy Policy.{" "}
+                  <span className="sp-tx">Learn more</span>
+                </h5>
+              </div>
+            )}
+
+            {formStep === 3 && (
+              <div className="body-3">
+                <div className="c-b">
+                  <h3 className="f-30 f-h3">Create your account</h3>
+                  <div className="in-con">
+                    <input
+                      type="text"
+                      placeholder="Phone"
+                      className="input-sty"
+                    ></input>
+                    <input
+                      type="text"
+                      placeholder="Phone"
+                      className="input-sty"
+                    ></input>
+                    <input
+                      type="text"
+                      placeholder="Phone"
+                      className="input-sty"
+                    ></input>
+                  </div>
+                  <p className="c-w f-10 t-0">
+                    By signing up, you agree to the{" "}
+                    <span className="sp-tx">Terms of Service</span> and{" "}
+                    <span className="sp-tx">Privacy Policy</span>, including{" "}
+                    <span className="sp-tx">Cookie Use</span>. Twitter may use your contact
+                    information, including your email address and phone number
+                    for purposes outlined in our Privacy Policy, like keeping
+                    your account secure and personalizing our services,
+                    including ads. <span className="sp-tx">Learn more</span>. Others will be able
+                    to find you by email or phone number, when provided, unless
+                    you choose otherwise <span className="sp-tx">here</span>.
+                  </p>
                 </div>
               </div>
-              <h5 className="mg-t-2 f-18">By signing up, you agree to our <span className="sp-tx">Terms</span>, <span className="sp-tx">Privacy Policy</span>, and <span className="sp-tx">Cookie Use</span>. Twitter may use your contact information, including your email address and phone number for purposes outlined in our Privacy Policy. <span className="sp-tx">Learn more</span></h5>
-            </div>)}
-            
-            {formStep === 3 && (<div>
-
-            </div>)}
+            )}
             {btnSub()}
           </form>
         </div>
