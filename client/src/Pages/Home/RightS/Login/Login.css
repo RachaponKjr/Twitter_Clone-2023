@@ -8,6 +8,7 @@
     border-radius: 10px;
     border:1px solid var(--g-hover) ;
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    position: fixed;
 }
 .f-24{
     font-size: 22px;
