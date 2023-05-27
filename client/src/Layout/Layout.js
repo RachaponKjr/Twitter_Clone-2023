@@ -4,10 +4,12 @@ import { HiHashtag } from "react-icons/hi";
 import { AiOutlineSetting } from "react-icons/ai";
 import "./Layout.css";
 import { Link, Outlet } from "react-router-dom";
+import Footer from "./Footer";
 
 const Layout = () => {
   return (
-    <section style={{display:"flex",flexDirection:"row",width:"100vw",maxWidth:"100%"}}>
+    <>
+    <section style={{display:"flex",flexDirection:"row",width:"100vw",maxWidth:"100%",position:"relative"}}>
       <nav id="layout">
         <div className="nav-b">
           <div
@@ -40,10 +42,13 @@ const Layout = () => {
           </div>
         </div>
       </nav>
+      <Footer/>
       <div style={{width:"75%",maxWidth:"100%"}}>
         <Outlet />
       </div>
     </section>
+    
+</>
   );
 };
 

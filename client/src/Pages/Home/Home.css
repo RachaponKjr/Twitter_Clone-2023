@@ -52,6 +52,7 @@
     
 }
 .icon-ed1{
+    fill: white;
     padding: 0.3rem;
 }
 
@@ -67,6 +68,8 @@
     height: max-content;
     padding: 0.5rem 0;
     border-bottom: 1px solid var(--g-hover);
+    border-left: 1px solid var(--g-hover);
+    border-right: 1px solid var(--g-hover);
 }
 .left-p{
     /* background-color: aquamarine; */
