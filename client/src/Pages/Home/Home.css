@@ -29,10 +29,10 @@
     cursor: pointer;
 }
 .hov-icon{
-    width: 2.5rem;
+    width: 2rem;
     height: 100%;
     border-radius: 100%;
-    padding: 0.5rem;
+    padding: 0.3rem;
     transition: 0.2s;
 }
 .hov-icon:hover{
@@ -46,4 +46,45 @@
     height: 100%;
     padding: 1rem 2rem;
     
+}
+
+
+
+
+
+/* CONTEN */
+.conten-info{
+    background-color: aqua;
+    width: 100%;
+    display: flex;
+    height: max-content;
+    padding: 0.5rem 0;
+}
+.left-p{
+    background-color: aquamarine;
+    width: 4rem;
+    display: flex;
+    justify-content: end;
+}
+.left-p img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+}
+.info-con{
+    width: calc(100% - 4rem);
+    background-color: rebeccapurple;
+    padding: 0 1rem 0 1rem;
+}
+.name-header{
+    display: flex;
+    justify-content: space-between;
+}
+.nam-s{
+    display: flex;
+    align-items: center;
+}
+.more{
+    width: 4rem;
+    background-color: red;
 }
